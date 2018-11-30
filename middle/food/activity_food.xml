@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_food" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFC000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Food"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_below="@+id/food"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:hint=" 음식을 입력해주세요!" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/food"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/search"
+            android:padding="0dp"
+            android:src="@drawable/search" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_below="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:choiceMode="multipleChoice"
+            android:divider="#D9D9D9"
+            android:dividerHeight="1.5dp"
+            android:scrollbars="vertical"
+            android:smoothScrollbar="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
