@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1023698340822-37mbh180qthqa9bdjb3q56fhrbl9o7af.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://healthcare-752cb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1023698340822</string>
+    <string name="google_api_key" translatable="false">AIzaSyBaZt5xN-XVBgcIwgCeOVchR1G7e4YIIs0</string>
+    <string name="google_app_id" translatable="false">1:1023698340822:android:30d2e4fe9c3ca94c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBaZt5xN-XVBgcIwgCeOVchR1G7e4YIIs0</string>
+    <string name="google_storage_bucket" translatable="false">healthcare-752cb.appspot.com</string>
+    <string name="project_id" translatable="false">healthcare-752cb</string>
+</resources>
